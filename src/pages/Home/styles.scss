@@ -1,0 +1,55 @@
+$primary : #FFFBE9;
+$secondary: rgba(5,128,127,1);
+$third: rgba(5,118,150,1);
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, $secondary 0%, $third 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+        background: $primary;
+        width: 35%;
+        height: 85vh;
+        padding: 1em;
+
+        .progress-content {
+            display: flex;
+            gap: 5px;
+            .progress-bar {
+                width: 50px;
+                height: 3px;
+                border-radius: 30px;
+                background: $secondary;
+            }
+        }
+        .timer {
+            font-size: 12px;
+            color: red;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        .card {
+            background: $primary;
+            width: 100%;
+            margin: 0 1.5em;           
+        }
+    }
+}
+@media screen and (max-width: 468px) {
+    .home {
+        .card {
+            background: $primary;
+            width: 100%;
+            margin: 0 1.5em;     
+            padding: 1em;      
+        }
+    }
+}

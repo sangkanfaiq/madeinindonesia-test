@@ -1,0 +1,123 @@
+$primary: #fffbe9;
+$secondary: rgba(5, 128, 127, 1);
+$third: rgba(5, 118, 150, 1);
+
+.content {
+  margin-top: 1em;
+  padding: 2em;
+  height: 100%;
+
+  h5 {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(209, 207, 207);
+  }
+  h1 {
+    font-size: 26px;
+    color: #666;
+    margin-bottom: 1em;
+  }
+
+  .answer {
+    margin-top: 1em;
+    background: $primary;
+    border: 1px solid $secondary;
+    padding: 0.7em 1em;
+    font-size: 14px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: $secondary;
+
+    &:hover {
+      background: $secondary;
+      color: $primary;
+    }
+  }
+  .answer.active {
+    margin-top: 1em;
+    background: $third;
+    border: 1px solid $third;
+    padding: 0.7em 1em;
+    font-size: 14px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: $primary;
+  }
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: 85%;
+    margin-bottom: 1em;
+    height: 50px;
+    border: none;
+    color: #fff;
+    background: $secondary;
+    outline: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $third;
+    }
+  }
+}
+
+.endsurvey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    width: 70%;
+    color: #666;
+  }
+  button {
+    width: 80%;
+    height: 50px;
+    border: none;
+    color: #fff;
+    background: $secondary;
+    outline: none;
+    border-radius: 50px;
+    margin-top: 3em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background: $third;
+    }
+
+    .icon {
+      margin-right: 0.5em;
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 1em;
+  }
+  .button {
+    margin: 0 1em;
+    button {
+      width: 100%;
+    }
+  }
+  .endsurvey {
+    h1 {
+      width: 100%;
+    }
+  }
+}
